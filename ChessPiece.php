@@ -1,11 +1,11 @@
 <?php
 
 class ChessPiece {
-    private $x_position;
-    private $y_position;
-    private $piece_color;
+    protected $x_position;
+    protected $y_position;
+    protected $piece_color;
 
-   function __construct($x_position, $y_position, $piece_color){
+   public function __construct($x_position, $y_position, $piece_color){
     $this->x_position = $x_position;
     $this->y_position = $y_position;
     $this->piece_color = $piece_color;
