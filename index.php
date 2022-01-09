@@ -30,12 +30,18 @@
     $whiteBishopOnLightSquare->canGoTo(8,3,2);
     $whiteBishopOnLightSquare->canGoTo(8,8,8); */
 
-    require('King.php');
+/*     require('King.php');
 
     $whiteKingOnE1 = new King(5,1,1);
 
-    $whiteKingOnE1->canGoTo(1,1)
+    $whiteKingOnE1->canGoTo(1,1) */
 
+require("Pawn.php");
+$pawnOnE2 = new Pawn(5,2,1);
+$pawnOnE2->canGoTo(5,4,true);
+$pawnOnE2->canGoTo(5,3,true);
+$pawnOnE2->canGoTo(5,4,false);
+$pawnOnE2->canGoTo(5,5,true);
     
 
     ?>
