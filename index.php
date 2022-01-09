@@ -23,13 +23,18 @@
         echo"Le cavalier est hors du jeu, il ne peut pas aller sur cette case";
     };
  */
-    require ('Bishop.php');
+/*     require ('Bishop.php');
 
     $whiteBishopOnLightSquare = new Bishop(6,1,1);
     $whiteBishopOnLightSquare->canGoTo(7,2,1);
     $whiteBishopOnLightSquare->canGoTo(8,3,2);
-    $whiteBishopOnLightSquare->canGoTo(8,8,8);
+    $whiteBishopOnLightSquare->canGoTo(8,8,8); */
 
+    require('King.php');
+
+    $whiteKingOnE1 = new King(5,1,1);
+
+    $whiteKingOnE1->canGoTo(1,1)
 
     
 
