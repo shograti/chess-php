@@ -2,8 +2,8 @@
 
 require('ChessPiece.php');
 class Knight extends ChessPiece {
-    public function __construct($x_position, $y_position, $piece_color){
-        parent::__construct($x_position, $y_position, $piece_color);
+    public function __construct($xPosition, $yPosition, $pieceColor){
+        parent::__construct($xPosition, $yPosition, $pieceColor);
     }
 
     public function isOnBoard($x,$y){
@@ -20,14 +20,14 @@ class Knight extends ChessPiece {
 
     public function canGoTo($x,$y){
        
-        if($x == ($this->x_position+2) && $y == ($this->y_position+1) ||
-        $x == ($this->x_position+1) && $y == ($this->y_position+2)||
-        $x == ($this->x_position-2) && $y == ($this->y_position-1)||
-        $x == ($this->x_position-1) && $y == ($this->y_position-2)||
-        $x == ($this->x_position+2) && $y == ($this->y_position-1)||
-        $x == ($this->x_position+1) && $y == ($this->y_position-2)||
-        $x == ($this->x_position-2) && $y == ($this->y_position+1)||
-        $x == ($this->x_position-1) && $y == ($this->y_position+2)
+        if($x == ($this->xPosition+2) && $y == ($this->yPosition+1) ||
+        $x == ($this->xPosition+1) && $y == ($this->yPosition+2)||
+        $x == ($this->xPosition-2) && $y == ($this->yPosition-1)||
+        $x == ($this->xPosition-1) && $y == ($this->yPosition-2)||
+        $x == ($this->xPosition+2) && $y == ($this->yPosition-1)||
+        $x == ($this->xPosition+1) && $y == ($this->yPosition-2)||
+        $x == ($this->xPosition-2) && $y == ($this->yPosition+1)||
+        $x == ($this->xPosition-1) && $y == ($this->yPosition+2)
         
         )
          {
