@@ -8,12 +8,12 @@
 </head>
 <body>
     <?php 
-   /*  require('ChessPiece.php'); */
+/*     require('ChessPiece.php');
     require('Knight.php');
 
-  /*   $white_piece_on_light_square = new ChessPiece(3,1,2);
+    $white_piece_on_light_square = new ChessPiece(3,1,2);
     $white_piece_on_light_square->getColor();
-    $white_piece_on_light_square->getCaseColor(); */
+    $white_piece_on_light_square->getCaseColor();
     
     $white_knight_from_b1_to_f3 = new Knight(2,1,1);
 
@@ -22,8 +22,13 @@
     } else {
         echo"Le cavalier est hors du jeu, il ne peut pas aller sur cette case";
     };
+ */
+    require ('Bishop.php');
 
-    
+    $whiteBishopOnLightSquare = new Bishop(6,1,1);
+    $whiteBishopOnLightSquare->canGoTo(7,2,1);
+    $whiteBishopOnLightSquare->canGoTo(8,3,2);
+    $whiteBishopOnLightSquare->canGoTo(8,8,8);
 
 
     
