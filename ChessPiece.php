@@ -31,6 +31,20 @@ class ChessPiece {
             return 1;
         }
     } 
+    public function isOnBoard($x,$y){
+        if($x<1 || $x > 8 || $y<1 || $y > 8){
+            echo "false !";
+            return false;
+            
+        } else {
+            echo "true !";
+            return true;
+            
+        }
+    }
+
 }
+
+
 
 ?>
