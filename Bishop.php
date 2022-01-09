@@ -1,6 +1,6 @@
 <?php 
 
-require('ChessPiece.php');
+require_once('ChessPiece.php');
 class Bishop extends ChessPiece {
     public function __construct($xPosition, $yPosition, $pieceColor){
         parent::__construct($xPosition, $yPosition, $pieceColor);
