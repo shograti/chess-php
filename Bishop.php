@@ -20,4 +20,6 @@ class Bishop extends ChessPiece {
             
         }
     }
+    
+
 }

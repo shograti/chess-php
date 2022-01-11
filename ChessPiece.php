@@ -11,6 +11,8 @@ class ChessPiece {
     $this->pieceColor = $pieceColor;
     }
 
+    
+
     public function getColor() {
         if ($this->pieceColor == 2){
             echo "The piece is black";
@@ -42,7 +44,78 @@ class ChessPiece {
             
         }
     }
+    public function canCapture($pieceToMove,$pieceToCapture){
+        if($pieceToMove->getPieceColor()!=$pieceToCapture->getPieceColor() && $pieceToMove->canGoTo($pieceToCapture->getxPosition(),$pieceToCapture->getyPosition()) ){
+            echo("the knight can capture the bishop");
+            return true;
+        } else {
+            echo("the knight can't capture the bishop");
+            return false;
+        }
+        
+    }
 
+  
+
+    /**
+     * Get the value of xPosition
+     */ 
+    public function getXPosition()
+    {
+        return $this->xPosition;
+    }
+
+    /**
+     * Set the value of xPosition
+     *
+     * @return  self
+     */ 
+    public function setXPosition($xPosition)
+    {
+        $this->xPosition = $xPosition;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of yPosition
+     */ 
+    public function getYPosition()
+    {
+        return $this->yPosition;
+    }
+
+    /**
+     * Set the value of yPosition
+     *
+     * @return  self
+     */ 
+    public function setYPosition($yPosition)
+    {
+        $this->yPosition = $yPosition;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of pieceColor
+     */ 
+    public function getPieceColor()
+    {
+        return $this->pieceColor;
+    }
+
+    /**
+     * Set the value of pieceColor
+     *
+     * @return  self
+     */ 
+    public function setPieceColor($pieceColor)
+    {
+        $this->pieceColor = $pieceColor;
+
+        return $this;
+    }
 }
 
 
